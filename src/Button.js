@@ -10,7 +10,7 @@ function Button({
     outline,
     rounded
 }) {
-    return <button className="text-blue-500">{children}</button>; // wrapped element
+    return <button className="text-lightblue-500">{children}</button>; // wrapped element
 }
 
 Button.propTypes = {
