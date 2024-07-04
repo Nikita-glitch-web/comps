@@ -1,4 +1,4 @@
-import {GoArrowSmallDown, GoArrowSmallUp} from 'react-icons/go'
+import {GoArrowDown, GoArrowSmallDown, GoArrowSmallUp, GoArrowUp} from 'react-icons/go'
 import Table from "./Table";
 import useSort from "../hooks/use-sort";
 
@@ -36,28 +36,28 @@ function SortableTable(props) {
 function getIcons(label, sortBy, sortOrder) {
     if (label !== sortBy) {
         return <div>
-            <GoArrowSmallUp />
-            <GoArrowSmallDown />
+            <GoArrowUp />
+            <GoArrowDown />
         </div>;
     }
 
     if (sortOrder === null) {
         return (
           <div>
-            <GoArrowSmallUp />
-            <GoArrowSmallDown />
+            <GoArrowUp />
+            <GoArrowUp />
           </div>
         );
     } else if (sortOrder === 'asc') {
         return (
           <div>
-            <GoArrowSmallUp />
+            <GoArrowUp />
           </div>
         );
     } else if (sortOrder === 'desc') {
         return (
           <div>
-            <GoArrowSmallDown />
+            <GoArrowDown />
           </div>
         );
     }
