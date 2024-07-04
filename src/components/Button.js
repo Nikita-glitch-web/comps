@@ -37,7 +37,6 @@ Button.propTypes = {
          + Number(!!secondary)
          + Number(!!warning)
          + Number(!!success);
-         + Number(!!danger);
 
          if (count <  1) {
             return new Error('invalid ')
